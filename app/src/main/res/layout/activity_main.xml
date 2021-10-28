@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入你的姓名："
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_below="@id/textName">
+            <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:id="@+id/textBir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择你的生日:"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_below="@id/editName"/>
+
+        <DatePicker
+            android:id="@+id/dataPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_below="@id/textBir"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_below="@id/dataPicker"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            android:layout_below="@id/button"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="单机查询你的星座性格吧"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_below="@id/imageView"/>
+
+    </RelativeLayout>
+
+</ScrollView>
