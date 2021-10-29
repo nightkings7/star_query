@@ -34,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 int month=date.getMonth();
                 int day=date.getDayOfMonth();
                 int index=searchStar(month,day);
-                int[] infoarray={1,2,3,4,5,6,7,8,9,10,11,12};
-                int[] imgarray={1,2,3,4,5,6,7,8,9,10,11,12};
-                String star=MainActivity.this.getString(infoarray[index]);
+                int[] infrared={R.string.aquarius,R.string.pisces,R.string.aries,R.string.taurus,R.string.gemini,R.string.cancer,R.string.leo,R.string.virgo,R.string.libra,R.string.scorpio,R.string.sagittarius,R.string.capricorns};
+                int[] imagery={R.drawable.aquarius,R.drawable.pisces,R.drawable.aries,R.drawable.taurus,R.drawable.gemini,R.drawable.cancer,R.drawable.leo,R.drawable.virgo,R.drawable.libra,R.drawable.scorpio,R.drawable.sagittarius,R.drawable.capricorns,};
+                String star=MainActivity.this.getString(infrared[index]);
                 text.setText(name.getText().toString()+",你的星座信息如下：\r\n"+star);
-                img.setImageResource(imgarray[index]);
+                img.setImageResource(imagery[index]);
             }
         });
     }
