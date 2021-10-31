@@ -18,7 +18,7 @@ android {
     //自定义打包名称
     android.applicationVariants.all{ variant ->
         variant.outputs.all {
-            outputFileName = "star_query_v${versionName}"
+            outputFileName = "star_query_v${versionName}.apk"
         }
     }
 
